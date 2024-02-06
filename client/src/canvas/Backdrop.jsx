@@ -16,20 +16,8 @@ const Backdrop = () => {
       rotation={[Math.PI / 2, 0, 0]}
       position={[0, 0, -0.14]}
     >
-      <RandomizedLight
-        amount={4}
-        radius={9}
-        // intensity={0.75}
-        // ambient={0.35}
-        position={[5, 5, -10]}
-      />
-      <RandomizedLight
-        amount={4}
-        radius={5}
-        // intensity={0.35}
-        // ambient={0.75}
-        position={[-5, 5, -9]}
-      />
+      <RandomizedLight amount={4} radius={9} position={[5, 5, -10]} />
+      <RandomizedLight amount={4} radius={5} position={[-5, 5, -9]} />
     </AccumulativeShadows>
   );
 };
